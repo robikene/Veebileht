@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+.logod{
+    display: flex;
+    position: absolute;
+    right: 0;
+    line-height: 60px;
+}
+.pildid{
+    padding-top: 5px;
+    padding-right:10px;
+}
+.html-sisene ul{
+    display:flex;
+    list-style: none;
+}
+.html-sisene li{
+    padding-right:15px;
+    padding-left:15px;
+}
+.html-sisene li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Allerta Stencil";
+    font-size: 16px;
+    color: black;
+    border-bottom:2px solid black;
+}
+.html-sisene li a:hover{
+    border-bottom:2px solid blue;
+}
+.html-sisene li a:active{
+    border-bottom:2px solid blue;
+}
+.pildid img{
+    border-radius: 50%;
+}
+.nav-main{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:60px;
+    background-color:white;
+    display:flex;
+    z-index:1000;
+}
+.btn-toggle-nav{
+    width:60px;
+    height:100%;
+    background-image:url(menu.png);
+    background-repeat:no-repeat;
+    background-size:40%;
+    background-position: center;
+    cursor:pointer;
+}
+.btn-toggle-nav:hover{
+    background-color:#0005;
+}
+.nimi{
+    line-height: 60px;
+    display: flex;
+    height:100%;
+    padding: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Allerta Stencil";
+    font-size: 16px;
+    color: black;
+}
+.nav-sidebar{
+    background-color:white;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:0px;
+    height:calc(100vh - 60px);
+    padding:0px;
+    z-index:1000;
+    transition:all 0.3s ease-in-out;
+}
+.nav-sidebar ul{
+    padding-top:15px;
+    overflow:hidden;
+    visibility:hidden;
+}
+.nav-sidebar ul li{
+    line-height:60px;
+    list-style:none;
+}
+.nav-sidebar ul li span, .nav-sidebar ul li a{
+    display:block;
+    height:60px;
+    padding:0px 10px;
+    text-decoration:none;
+    text-transform: uppercase;
+    color:black;
+    font-family:"Allerta Stencil";
+    font-size:16px;
+    white-space:nowrap;
+    opacity:0;
+    transition:all 0.3s ease-in-out;
+}
+.nav-sidebar ul li a:hover{
+    background-color:#0005;
+}
+.tabel{
+    background-color: white;
+    position:absolute;
+    width:100%;
+    top:60px;
+    z-index:1000;
+}
+.tabel ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+}
+.tabel li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+.tabel li a:hover,
+.tabel .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+.tabel .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.tabel .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.tabel .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+} 
+.tabel .menu-btn {
+    display: none;
+}
+.tabel .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+.navicon{
+    text-transform: uppercase;
+    font-family: "Allerta Stencil";
+    font-size: 16px;
+    color: black;
+    border-bottom:2px solid black;
+}
+.navicon:hover{
+    border-bottom:2px solid blue;
+}
