@@ -24,7 +24,6 @@ body{
     padding-left:15px;
 }
 .html-sisene li a{
-    text-decoration: none;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Allerta Stencil";
@@ -109,61 +108,21 @@ body{
 .nav-sidebar ul li a:hover{
     background-color:#0005;
 }
-.tabel{
-    background-color: white;
-    position:absolute;
-    width:100%;
-    top:60px;
-    z-index:1000;
+.tabeliveerud{
+    position: absolute;
+    left:650px;
+    top:70px;
 }
-.tabel ul{
-    margin:0;
-    padding:0;
-    list-style: none;
+.pilt{
+    position: absolute;
+    width:600px;
     overflow: hidden;
-    background-color: white;
+    left:220px;
 }
-.tabel li a {
-    display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
-    text-decoration: none;
-}
-.tabel li a:hover,
-.tabel .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-.tabel .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-.tabel .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-.tabel .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-} 
-.tabel .menu-btn {
-    display: none;
-}
-.tabel .menu-btn:checked ~ .menu {
-    max-height: 240px;
-}
-.navicon{
+.andmed div, .andmed li, .tabelid th, .tabelid td{
     text-transform: uppercase;
     font-family: "Allerta Stencil";
     font-size: 16px;
     color: black;
-    border-bottom:2px solid black;
-}
-.navicon:hover{
-    border-bottom:2px solid blue;
+    padding-top:10px;
 }
